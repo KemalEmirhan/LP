@@ -48,12 +48,12 @@ export default function Form() {
 
   const getButtonText = () => {
     if (isMutating) {
-      return 'Submitting...';
+      return 'Getting Your Heat Pump...';
     }
     if (successData) {
       return 'Thank You!';
     }
-    return "Let's Calculate Your Savings";
+    return "Get Your Heat Pump";
   };
 
   const getButtonClasses = () => {
