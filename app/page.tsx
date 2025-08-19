@@ -1,6 +1,6 @@
 'use client'
 
-import React, { useState } from "react";
+import React, { Suspense, useState } from "react";
 import { useInView } from "react-intersection-observer";
 
 import Navbar from "@/components/Navbar";
@@ -32,7 +32,9 @@ export default function Home() {
       <WhyThisPackage />
       <BrandTrust />
       <GetStarted />
-      <Form />
+      <Suspense fallback={<div>Loading...</div>}>
+        <Form />
+      </Suspense>
     </>
   );
 }
