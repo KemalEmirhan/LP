@@ -153,21 +153,6 @@ Handles form submissions with the following structure:
 - **Success States**: Confirmation messages after successful submission
 - **Accessibility**: Proper ARIA labels and keyboard navigation
 
-## 🚀 Deployment
-
-### Build for Production
-
-```bash
-yarn build
-yarn start
-```
-
-### Environment Variables
-
-No environment variables are currently required, but you may want to add:
-- `NEXT_PUBLIC_API_URL` for production API endpoints
-- `NEXT_PUBLIC_ANALYTICS_ID` for analytics tracking
-
 ## 🔧 Development
 
 ### Available Scripts
