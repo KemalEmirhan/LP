@@ -68,18 +68,18 @@ enpal-landing-page/
 
 ## 🔑 SignUpId System
 
-The application implements a secure signup system using unique `signUpId` parameters. Here's how it works:
+The application implements a secure signup system using unique `signupId` parameters. Here's how it works:
 
-### How to Use SignUpId
+### How to Use signupId
 
-1. **URL Parameter**: The signup form expects a `signUpId` parameter in the URL:
+1. **URL Parameter**: The signup form expects a `signupId` parameter in the URL:
    ```
-   https://your-domain.com?signUpId=unique-identifier-123
+   https://lp-dun-three.vercel.app/?signupId=123
    ```
 
-2. **Form Integration**: The `signUpId` is automatically captured from the URL and included in form submissions.
+2. **Form Integration**: The `signupId` is automatically captured from the URL and included in form submissions.
 
-3. **Validation**: The API endpoint validates that a `signUpId` is present before processing the form:
+3. **Validation**: The API endpoint validates that a `signupId` is present before processing the form:
    ```typescript
    if (!signupId || signupId.trim() === '') {
      return NextResponse.json(
@@ -91,17 +91,17 @@ The application implements a secure signup system using unique `signUpId` parame
 
 ### Implementation Details
 
-- **Automatic Capture**: The form component uses `useSearchParams()` to extract the `signUpId` from the URL
-- **Form State**: The `signUpId` is stored in the form state and sent with every submission
-- **Error Handling**: Clear error messages guide users when the `signUpId` is missing
+- **Automatic Capture**: The form component uses `useSearchParams()` to extract the `signupId` from the URL
+- **Form State**: The `signupId` is stored in the form state and sent with every submission
+- **Error Handling**: Clear error messages guide users when the `signupId` is missing
 - **Security**: The system ensures all form submissions are tied to valid signup links
 
 ### Example Usage
 
 ```typescript
-// URL: https://enpal.com?signUpId=campaign-2024-001
+// https://lp-dun-three.vercel.app/?signupId=123
 const searchParams = useSearchParams();
-const signupId = searchParams.get('signUpId'); // Returns "campaign-2024-001"
+const signupId = searchParams.get('signupId'); // Returns "123"
 ```
 
 ## 📝 API Endpoints
