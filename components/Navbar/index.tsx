@@ -36,7 +36,7 @@ export default function Navbar({ showCTA }: NavbarProps) {
       </div>
       {showCTA && (
         <div className="animate-show-up">
-          <Link href="#signup-form" className="bg-[#ffd233] text-black cursor-pointer px-6 py-2 rounded-md w-fit text-base font-bold hover:bg-[#ffd233]/90 transition-[colors,scale] duration-150 active:scale-97">Let&apos;s Calculate Your Savings</Link>
+          <Link href="#signup-form" className="bg-[#ffd233] text-black cursor-pointer px-2 md:px-6 py-2 rounded-md w-full md:w-fit text-base font-bold hover:bg-[#ffd233]/90 transition-[colors,scale] duration-150 active:scale-97">Let&apos;s Calculate Your Savings</Link>
         </div>
       )}
     </nav>  
